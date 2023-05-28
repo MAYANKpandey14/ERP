@@ -1,0 +1,137 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #b92b27;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e6140d, #0202fc, );
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(150deg, #e6140d, #0d2dde);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    background-size: cover;
+}
+
+
+.container {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 42em;
+    width: 30em;
+    background: rgb(255, 255, 255);
+    box-shadow: 20px 25px 40px 0 rgba(2, 2, 2, 0.37);
+    /* backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px); */
+    border-radius: 10px;
+}
+
+.heading {
+    font-size: 28px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    user-select: none;
+}
+
+img {
+    margin-top: 2.5em;
+    height: 165px;
+    width: 155px;
+    /* filter: drop-shadow(0px 10px 50px #6b6a6a); */
+}
+
+input[type='password'] {
+    letter-spacing: 0.25em;
+}
+
+form input,
+label,
+button {
+    display: flex;
+    margin: 1em auto;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 17.5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form input {
+    padding: 0.25em 2.5em;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+
+
+button {
+    margin: 1.5em auto;
+    padding: 1em 2em;
+    border-radius: 1em;
+    box-shadow: 1px 0px 10px black;
+    align-items: center;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    color: #000000;
+    cursor: pointer;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    font-size: 18px; 
+}
+
+button:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}

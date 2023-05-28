@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/entry.css">
+    <title>Attendace System</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-items">
+                <div class="logo"><img src="/images/logo-removebg-preview.png" alt="" width="45em" height="50em">
+                </div>
+                <h2>Police ERP</h2>
+                <button class="log-out">Log Out <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.51428 20H4.51428C3.40971 20 2.51428 19.1046 2.51428 18V6C2.51428 4.89543 3.40971 4 4.51428 4H8.51428V6H4.51428V18H8.51428V20Z" fill="currentColor" /><path d="M13.8418 17.385L15.262 15.9768L11.3428 12.0242L20.4857 12.0242C21.038 12.0242 21.4857 11.5765 21.4857 11.0242C21.4857 10.4719 21.038 10.0242 20.4857 10.0242L11.3236 10.0242L15.304 6.0774L13.8958 4.6572L7.5049 10.9941L13.8418 17.385Z" fill="currentColor" /></svg></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="quantity">
+            <ul>
+                <li>
+                    <div class="number">Total Present:</div>
+                </li>
+                <li>
+                    <div class="ri">RI :</div>
+                </li>
+                <li>
+                    <div class="insp"> Inspector :</div>
+                </li>
+                <li>
+                    <div class="si-cp"> SI CP:</div>
+                </li>
+                <li>
+                    <div class="si-ap"> SI AP:</div>
+                </li>
+                <li>
+                    <div class="hc-cp"> HC CP :</div>
+                </li>
+                <li>
+                    <div class="hc-ap"> HC AP :</div>
+                </li>
+                <li>
+                    <div class="c-cp"> Constable CP:</div>
+                </li>
+                <li>
+                    <div class="c-ap"> Constable AP:</div>
+                </li>
+                <li>
+                    <div class="follower"> Follower :</div>
+                </li>
+            </ul>
+        </div>
+        <div class="entry">
+            <div class="form">
+                <form action="/src/entry-complete.html" method="post">
+                    <div class="primary">
+                    <label for="pno">PNO :</label>
+                    <input type="tel" name="" id="pno" maxlength="9" minlength="9" required><br>
+                    <label for="ap-cp">AP/CP Number :</label>
+                    <input type="tel" name="" id="ap-cp" placeholder="Enter your password" required><br>
+
+                    <label for="name">Full Name :</label>
+                    <input type="text" name="" id="name" placeholder="Enter your Name"><br>
+
+                    <label for="fname">Father Name :</label>
+                    <input type="text" id="fname" placeholder="Enter your Father Name"><br>
+
+                    <label for="nominee">Nominee :</label>
+                    <input type="text" id="nominee" placeholder="Enter Nominee Name"><br>
+
+                    <label for="">Mobile Number :</label>
+                    <input type="tel" name="" id=""><br>
+
+                    <label for="">Address :</label>
+                    <input type="text" name="" id=""><br>
+
+                    <label for="">PAN Number :</label>
+                    <input type="tel" name="" id=""><br>
+
+                    <label for="desig">Designation :</label>
+                    <input type="text" name="" id="desig" placeholder="Enter your Designation"><br>
+
+                    <label for="arrival">Arrival Date :</label>
+                    <input type="date" name="password" id="arrival" placeholder="Enter Arrival Date"><br>
+
+                    <label for="loc">Departure Location :</label>
+                    <input type="text" name="" id="aloc"><br>
+
+                    <label for="password">Departure Date :</label>
+                    <input type="date" name="password" id="password" placeholder="Enter your password"><br>
+
+                    <label for="dloc">Arrival Location</label>
+                    <input type="text" id="dloc"><br>
+
+                    <label for="">Duty :</label>
+                    <input type="text"><br>
+                   
+                    <label for="">Joining Date :</label>
+                    <input type="date" name="" id=""><br>
+                    </div>
+
+                    <div class="secondary">
+                    
+                </div>
+                <input class="log-out" type="submit" value="Submit"><br>
+                </form>
+            </div>
+            <div class="history">
+                <div class="container">
+                    <h2>Recent Submitted Data :</h2>
+                    <ul class="responsive-table">
+                      <li class="table-header">
+                        <div class="col col-1">Job Id</div>
+                        <div class="col col-2">Customer Name</div>
+                        <div class="col col-3">Amount Due</div>
+                        <div class="col col-4">Payment Status</div>
+                      </li>
+                      <li class="table-row">
+                        <div class="col col-1" data-label="Job Id">42235</div>
+                        <div class="col col-2" data-label="Customer Name">John Doe</div>
+                        <div class="col col-3" data-label="Amount">$350</div>
+                        <div class="col col-4" data-label="Payment Status">Pending</div>
+                      </li>
+                      <li class="table-row">
+                        <div class="col col-1" data-label="Job Id">42442</div>
+                        <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
+                        <div class="col col-3" data-label="Amount">$220</div>
+                        <div class="col col-4" data-label="Payment Status">Pending</div>
+                      </li>
+                      <li class="table-row">
+                        <div class="col col-1" data-label="Job Id">42257</div>
+                        <div class="col col-2" data-label="Customer Name">John Smith</div>
+                        <div class="col col-3" data-label="Amount">$341</div>
+                        <div class="col col-4" data-label="Payment Status">Pending</div>
+                      </li>
+                      <li class="table-row">
+                        <div class="col col-1" data-label="Job Id">42311</div>
+                        <div class="col col-2" data-label="Customer Name">John Carpenter</div>
+                        <div class="col col-3" data-label="Amount">$115</div>
+                        <div class="col col-4" data-label="Payment Status">Pending</div>
+                      </li>
+                    </ul>
+                  </div>
+
+            </div>
+    </main>
+    <footer>
+        <div class="links">
+            <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At beatae, a fuga sit hic ratione eius repellendus illum inventore placeat nam dolorem distinctio nulla id, officia quasi, cumque cum exercitationem?</p>
+        </div>
+    </footer>
+</body>
+
+</html>
